@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { CarrinhoService } from 'src/app/carrinho.service';
 import { NotificacaoService } from 'src/app/notificacao.service';
 import { ProdutosService } from 'src/app/produtos.service';
-import { IProduto, IProdutoCarrinho } from '../produtos';
+import { IProduto, IProdutoCarrinho } from 'src/app/produtos';
 
 @Component({
   selector: 'app-detalhes-produto',
@@ -36,5 +36,4 @@ export class DetalhesProdutoComponent implements OnInit {
     }
     this.carrinhoService.adicionarAoCarrinho(produto);
   }
-
 }
