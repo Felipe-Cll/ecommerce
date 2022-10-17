@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HeaderModule } from '../../components/header/header.module';
-import { HomeModule } from 'src/app/pages/home/home.module';
-
-
 
 @NgModule({
   declarations: [],
@@ -13,7 +10,6 @@ import { HomeModule } from 'src/app/pages/home/home.module';
     HeaderModule
   ],
   exports: [
-    HomeModule,
     HeaderModule
   ]
 })
